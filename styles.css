@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 1rem;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    align-items: center;
+    background-color: lightgreen;
+    box-shadow: 0px 2px 4px rgba(52, 58, 64, 0.1);
+    display: flex;
+    height:  50px;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    height: calc(100vh - 50px);
+    position: relative;
+    background-color: lightblue;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 100%;
+}
