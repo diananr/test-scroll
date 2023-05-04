@@ -18,4 +18,15 @@
         </div>
     </div>
 </body>
+<script>
+    var myElement = document.querySelector('.content');
+
+    function setHeight() {
+    var height = window.innerHeight - 50; // subtract 50px from the viewport height
+    myElement.style.height = height + 'px'; // set the height of the element dynamically
+    }
+
+    setHeight(); // call the function initially to set the height
+    window.addEventListener('resize', setHeight); // call the function on window resize
+</script>
 </html>

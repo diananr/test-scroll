@@ -12,14 +12,10 @@ body {
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 1px solid red;
 }
 
 .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    border: 1px solid red;
 }
 
 .header{
@@ -35,7 +31,7 @@ body {
     display: flex;
     position: relative;
     background-color: lightblue;
-    flex: 1;
+    height: calc(100vh - 50px);
 }
 
 .chat{
@@ -44,4 +40,10 @@ body {
     justify-content: flex-end;
     padding: 1rem;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        height: auto; /* reset height to auto for mobile devices */
+    }
 }
