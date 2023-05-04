@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Test</title>
 </head>
-<bod class="wrapper"y>
+<body>
     <header class="header">header</header>
     <div class="content">
         <div class="chat">
@@ -29,17 +29,5 @@
     setHeight(); // call the function initially to set the height
     window.addEventListener('resize', setHeight); // call the function on window resize
 </script>
-<script>
-    const hideMobileKeyboardOnReturn = (element) => {
-    element.addEventListener('keyup', (keyboardEvent) => {
-        const key = keyboardEvent.code || keyboardEvent.keyCode;
-        if (key === 'Enter' || key === 13) {
-            element.blur();
-        }
-    });
-    document.querySelementectorAll('[type=search]').forEach((element) => {
-    hideMobileKeyboardOnReturn(element);
-}); 
-};
 </script>
 </html>

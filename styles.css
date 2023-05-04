@@ -15,9 +15,6 @@ body {
     border: 1px solid red;
 }
 
-.wrapper{
-}
-
 .header{
     align-items: center;
     background-color: lightgreen;
@@ -40,10 +37,4 @@ body {
     justify-content: flex-end;
     padding: 1rem;
     width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-    .content {
-        height: auto; /* reset height to auto for mobile devices */
-    }
 }
